@@ -9,7 +9,7 @@ compiler:
 
 before_script:
   - wget https://github.com/UK-MAC/typhonio/archive/master.tar.gz
-  - tar -zxvf master.tar
+  - tar -zxvf master.tar.gz
   - pushd typhonio-master
   - make install HPC_COMPILER=gcc NOF90=1
   - popd
