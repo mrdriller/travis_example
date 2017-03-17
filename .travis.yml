@@ -7,6 +7,11 @@ language: cpp
 compiler:
   - gcc
 
+addons:
+  apt:
+    packages:
+      - hdf5-dev
+
 before_script:
   - wget https://github.com/UK-MAC/typhonio/archive/master.tar.gz
   - tar -zxvf master.tar.gz
