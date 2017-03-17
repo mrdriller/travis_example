@@ -10,7 +10,7 @@ compiler:
 addons:
   apt:
     packages:
-      - libhdf5-dev
+      - libhdf5-serial-dev
 
 before_script:
   - wget https://github.com/UK-MAC/typhonio/archive/master.tar.gz
