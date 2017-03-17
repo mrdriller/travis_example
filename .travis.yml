@@ -7,4 +7,11 @@ language: cpp
 compiler:
   - gcc
 
+before_script:
+  - wget https://github.com/UK-MAC/typhonio/archive/master.tar.gz
+  - tar -zxvf master.tar
+  - pushd typhonio-master
+  - make install HPC_COMPILER=gcc NOF90=1
+  - popd
+
 script: mkdir build && cd build && cmake .. && make
