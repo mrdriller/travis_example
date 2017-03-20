@@ -10,4 +10,5 @@ find_package(ZLIB REQUIRED)
 find_package(HDF5 REQUIRED)
 find_package(Qt4 REQUIRED QtGui)
 
-add_executable(tci_exmpl main.cpp)
+add_subdirectory(src)
+add_subdirectory(test)
