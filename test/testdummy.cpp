@@ -9,6 +9,6 @@
 
 void TestDummy::initialization() {
     Dummy dummy(-12, 2.33);
-    QVERIFY(dummy.geta() == -12);
-    QVERIFY(dummy.getb() == 2.33);
+    QCOMPARE(-12, dummy.geta());
+    QCOMPARE(2.33, dummy.getb());
 }

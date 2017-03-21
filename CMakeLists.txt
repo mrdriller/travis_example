@@ -15,5 +15,7 @@ find_package(HDF5 REQUIRED)
 find_package(Qt4 REQUIRED QtCore QtTest)
 include(${QT_USE_FILE})
 
+enable_testing()
+
 add_subdirectory(src)
 add_subdirectory(test)

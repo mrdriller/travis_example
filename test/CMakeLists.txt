@@ -2,8 +2,6 @@
 # test/CMakeLists.txt
 #
 
-enable_testing()
-
 set (TEST_HEADER_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/testdummy.h
 )
