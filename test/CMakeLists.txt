@@ -4,10 +4,12 @@
 
 set (TEST_HEADER_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/testdummy.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/testanother.h
 )
 
 set(TEST_SOURCE_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/testdummy.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/testanother.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/test_runner.cpp
 )
 

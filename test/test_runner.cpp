@@ -4,10 +4,17 @@
 
 #include <QtTest/QtTest>
 #include "testdummy.h"
+#include "testanother.h"
 
 int main(int argc, char *argv[]) {
     int errorCode;
-
-    TestDummy testDummy;
-    return QTest::qExec(&testDummy, argc, argv);
+    {
+        TestDummy testDummy;
+        errorCode |= QTest::qExec(&testDummy, argc, argv);
+    }
+    {
+        TestAnother testAnother;
+        errorCode |= QTest::qExec(&testAnother, argc, argv);
+    }
+    return errorCode;
 }

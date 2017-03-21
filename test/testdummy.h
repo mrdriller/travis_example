@@ -1,5 +1,5 @@
 //
-// test/TestDummy.h
+// test/testdummy.h
 //
 
 #ifndef TEST_TESTDUMMY_H_

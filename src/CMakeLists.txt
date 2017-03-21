@@ -4,10 +4,12 @@
 
 set(TCI_CORE_HEADER_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/dummy.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/another.h
 )
 
 set (TCI_CORE_SOURCE_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/dummy.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/another.cpp
 )
 
 add_library(tci_core ${TCI_CORE_HEADER_FILES} ${TCI_CORE_SOURCE_FILES})

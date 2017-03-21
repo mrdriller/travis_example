@@ -1,5 +1,5 @@
 //
-// TestDummy.cpp
+// test/testdummy.cpp
 //
 
 #include "src/dummy.h"
