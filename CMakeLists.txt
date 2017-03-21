@@ -13,6 +13,7 @@ set (CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(ZLIB REQUIRED)
 find_package(HDF5 REQUIRED)
 find_package(Qt4 REQUIRED QtCore QtTest)
+include(${QT_USE_FILE})
 
 add_subdirectory(src)
 add_subdirectory(test)
