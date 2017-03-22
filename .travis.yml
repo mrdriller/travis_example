@@ -26,5 +26,5 @@ script:
   - cd build
   - pwd
   - ls ..
-  - cmake .. -DTyphonIO_ROOT:PATH=../typhonio-master/build/gcc \
+  - cmake .. -DTyphonIO_ROOT:PATH=${PWD}/../typhonio-master/build/gcc
   - make
