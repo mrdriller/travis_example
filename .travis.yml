@@ -19,4 +19,7 @@ before_script:
   - make install HPC_COMPILER=gcc NOF90=1 CFLAGS=-DH5_NO_DEPRECATED_SYMBOLS
   - popd
 
-script: mkdir build && cd build && cmake .. && make
+script: mkdir build \
+        && cd build \
+        && cmake -DTyphonIO_ROOT:PATH=../typhonio-master/build/gcc .. \
+        && make
