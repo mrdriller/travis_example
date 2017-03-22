@@ -24,5 +24,7 @@ script:
   - pwd
   - ls
   - cd build
-  - cmake ../travis_example -DTyphonIO_ROOT:PATH=../typhonio-master/build/gcc \
-    && make
+  - pwd
+  - ls ..
+  - cmake .. -DTyphonIO_ROOT:PATH=../typhonio-master/build/gcc \
+  - make
