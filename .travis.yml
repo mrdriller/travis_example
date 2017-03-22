@@ -20,11 +20,7 @@ before_script:
   - popd
 
 script:
-  - mkdir build
-  - pwd
-  - ls
-  - cd build
-  - pwd
-  - ls ..
-  - cmake .. -DTyphonIO_ROOT:PATH=${PWD}/../typhonio-master/build/gcc
-  - make
+  - mkdir build \
+  && cd build \
+  && cmake .. -DTyphonIO_ROOT:PATH=${PWD}/../typhonio-master/build/gcc \
+  && make
