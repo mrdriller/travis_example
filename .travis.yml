@@ -21,6 +21,6 @@ before_script:
 
 script:
   - mkdir build \
-  && cd build \
-  && cmake .. -DTyphonIO_ROOT:PATH=${PWD}/../typhonio-master/build/gcc \
-  && make
+    && cd build \
+    && cmake .. -DTyphonIO_ROOT:PATH=${PWD}/../typhonio-master/build/gcc \
+    && make
